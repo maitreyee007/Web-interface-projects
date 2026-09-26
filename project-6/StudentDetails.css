@@ -1,0 +1,68 @@
+.student-details {
+  width: min(100% - 32px, 440px);
+  margin: 32px auto;
+  padding: 28px;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #d9e2ec;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(31, 45, 61, 0.12);
+  box-sizing: border-box;
+}
+
+.student-details h2 {
+  margin: 0 0 20px;
+  color: #243447;
+  font-size: 26px;
+}
+
+.details {
+  margin-bottom: 20px;
+  padding: 16px 18px;
+  background: #f2f7fb;
+  border-left: 4px solid #1976d2;
+  border-radius: 6px;
+}
+
+.details p {
+  margin: 8px 0;
+  color: #405466;
+  line-height: 1.5;
+}
+
+.details p:first-child {
+  margin-top: 0;
+}
+
+.details p:last-child {
+  margin-bottom: 0;
+}
+
+.student-details button {
+  padding: 11px 18px;
+  color: #ffffff;
+  background: #1976d2;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.student-details button:hover {
+  background: #125ca1;
+  transform: translateY(-1px);
+}
+
+.student-details button:focus-visible {
+  outline: 3px solid rgba(25, 118, 210, 0.3);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .student-details {
+    margin: 20px 16px;
+    padding: 22px;
+  }
+}

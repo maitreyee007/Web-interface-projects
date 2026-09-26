@@ -1,0 +1,118 @@
+.form-container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group label {
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  background: white;
+  padding: 0 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.preview-box {
+  flex: 1;
+  min-width: 300px;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preview-box h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.preview-box p {
+  margin: 10px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.preview-form {
+  width: min(100%, 520px);
+  margin: 32px auto;
+  padding: 28px;
+  display: grid;
+  gap: 18px;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #d9e2ec;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(31, 45, 61, 0.12);
+  box-sizing: border-box;
+}
+
+.preview-form label {
+  display: grid;
+  gap: 7px;
+  color: #243447;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.preview-form input,
+.preview-form textarea {
+  width: 100%;
+  padding: 11px 12px;
+  color: #243447;
+  background: #f8fafc;
+  border: 1px solid #b8c5d1;
+  border-radius: 6px;
+  font: inherit;
+  box-sizing: border-box;
+  resize: vertical;
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.preview-form input:focus,
+.preview-form textarea:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.16);
+}
+
+@media (max-width: 600px) {
+  .preview-form {
+    margin: 20px 12px;
+    padding: 20px;
+  }
+}

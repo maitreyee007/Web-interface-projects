@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#6fb1ff"/>
+      <stop offset="1" stop-color="#4a7cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="12" fill="url(#g)" />
+  <g transform="translate(40,40)" fill="#fff" font-family="Segoe UI, Roboto, Arial" text-anchor="start">
+    <rect x="0" y="0" width="720" height="420" rx="12" fill="rgba(255,255,255,0.06)" />
+    <g transform="translate(20,20)">
+      <circle cx="80" cy="80" r="60" fill="rgba(255,255,255,0.15)" />
+      <rect x="160" y="30" width="480" height="200" rx="8" fill="rgba(255,255,255,0.06)" />
+      <text x="20" y="300" font-size="48" font-weight="700">Photography</text>
+      <text x="20" y="350" font-size="20">Capturing moments, landscapes and portraits.</text>
+    </g>
+  </g>
+</svg>

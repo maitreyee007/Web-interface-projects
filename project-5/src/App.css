@@ -1,0 +1,256 @@
+.report-card {
+  max-width: 1200px;
+  margin: 28px auto;
+  padding: 24px 28px 18px;
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid #dfe8ef;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.college-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #0f172a;
+}
+
+.college-brand-block {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.seal-image {
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f8fafc;
+  padding: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.college-header h1,
+.college-header h2 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.college-header h1 {
+  font-size: clamp(1.4rem, 2.1vw, 2.4rem);
+  letter-spacing: 0.04em;
+  color: #0f172a;
+}
+
+.college-header h2 {
+  font-size: clamp(0.9rem, 1.2vw, 1.4rem);
+  letter-spacing: 0.08em;
+  color: #475569;
+  margin-top: 4px;
+}
+
+.report-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.report-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 14px;
+}
+
+.report-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #075985;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.print-button {
+  border: none;
+  background: linear-gradient(135deg, #0f766e, #0ea5a4);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.8rem 1.4rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(15, 118, 110, 0.2);
+}
+
+.student-info-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
+}
+
+.student-identity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.student-info-box p {
+  margin: 0 0 10px;
+  color: #1e293b;
+  font-size: 0.96rem;
+}
+
+.student-info-box span {
+  font-weight: 700;
+  color: #334155;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 0.8fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.marks-table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.marks-table th,
+.marks-table td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.7rem 0.8rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.marks-table th {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 800;
+}
+
+.marks-table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.result-pass {
+  color: #166534;
+  font-weight: 700;
+}
+
+.result-ra {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.summary-block {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-row span {
+  color: #475569;
+}
+
+.summary-row strong {
+  color: #0f172a;
+}
+
+.signature-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding-top: 24px;
+  margin-top: 22px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.signature-section > div {
+  flex: 1;
+  text-align: center;
+}
+
+.signature-line {
+  height: 3px;
+  background: #0f172a;
+  width: 90%;
+  margin: 0 auto 12px;
+}
+
+.signature-section p {
+  font-size: 0.9rem;
+  color: #334155;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .report-card {
+    margin: 12px;
+    padding: 18px 14px;
+  }
+
+  .college-header,
+  .report-topbar,
+  .signature-section,
+  .student-identity-grid,
+  .content-grid {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+
+  .college-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .report-title {
+    text-align: left;
+  }
+
+  .report-topbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .signature-section {
+    display: flex;
+    flex-direction: column;
+  }
+}

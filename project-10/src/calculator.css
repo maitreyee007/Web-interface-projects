@@ -1,0 +1,138 @@
+:root {
+  --page-bg: #edf3ee;
+  --card-bg: #ffffff;
+  --display-bg: #1e3d35;
+  --display-text: #f1f5f3;
+  --panel-bg: #eef4f0;
+  --function-bg: #e5ece7;
+  --operator-bg: #e67e22;
+  --operator-hover: #d97112;
+  --equal-bg: #d95d2c;
+  --equal-hover: #c55025;
+  --text-dark: #1d3d33;
+  --text-muted: #6c7f77;
+  --shadow: rgba(14, 36, 31, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--page-bg);
+  color: var(--text-dark);
+}
+
+button {
+  font: inherit;
+}
+
+.calculator-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  background: var(--page-bg);
+}
+
+.calculator-card {
+  width: min(100%, 360px);
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: 0 16px 30px var(--shadow);
+  padding: 22px 18px 18px;
+}
+
+.calculator-display {
+  width: 100%;
+  min-height: 90px;
+  background: var(--display-bg);
+  color: var(--display-text);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 18px 18px;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-align: right;
+  word-break: break-all;
+}
+
+.calculator-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.calc-btn {
+  border: none;
+  border-radius: 10px;
+  height: 58px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease, opacity 0.15s ease, box-shadow 0.15s ease;
+  background: var(--panel-bg);
+  color: var(--text-dark);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.calc-btn:hover {
+  opacity: 0.96;
+}
+
+.calc-btn:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+.function-btn {
+  background: #e4ece8;
+  color: var(--text-dark);
+}
+
+.operator-btn {
+  background: var(--operator-bg);
+  color: white;
+}
+
+.operator-btn:hover {
+  background: var(--operator-hover);
+}
+
+.equal-btn {
+  background: var(--equal-bg);
+  color: white;
+}
+
+.equal-btn:hover {
+  background: var(--equal-hover);
+}
+
+.zero-btn {
+  grid-column: span 2;
+}
+
+.keyboard-note {
+  margin: 18px 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 420px) {
+  .calculator-card {
+    padding: 16px 12px 14px;
+  }
+
+  .calc-btn {
+    height: 52px;
+    font-size: 1rem;
+  }
+}
